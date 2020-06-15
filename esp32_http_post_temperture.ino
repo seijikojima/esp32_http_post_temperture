@@ -13,12 +13,12 @@
 const int PIN_DHT = 4;
 DHT dht(PIN_DHT,DHT11);
 
-const char* ssid = "39626743-2.4G";
-const char* password = "22242117";
+const char* ssid = "";
+const char* password = "";
 WebServer server(80);
 IPAddress ipadr;
 
-const char* serverName = "http://seijikojima.com:7001/send_data";
+const char* serverName = "http://your_server:7001/send_data";
 
 unsigned long lastTime = 0;
 unsigned long timerDelay = 5000; // 5 second
